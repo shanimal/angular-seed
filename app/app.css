@@ -1,25 +1,114 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+body, html {
+  font-family: helvetica;
+  color: white;
+  background: #333333;
+  height:100%;
 }
 
-.menu:before {
-  content: "[";
+header:before {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid white;
+}
+header {
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: lighter;
+  background-color: rgba(255,255,255,.1);
+}
+.chevron {
+  color:white;
+  position:absolute;
+  margin:1px 4px;
+  font-weight:bold;
 }
 
-.menu:after {
-  content: "]";
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
 }
 
-.menu > li {
-  display: inline;
+.content {
+  text-align: center;
+  margin: 36px;
 }
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+.content p {
+  text-align:left;
+}
+.content img.icon {
+  width: 70px;
+}
+.content h3 {
+  margin:0;
+}
+.content h2 {
+  font-weight: lighter;
+  margin:1em 0 0 0;
+}
+.content h2 h2 {
+  font-size: 1em;
+  margin: -0.3em 0 0 0;
+  font-weight: normal;
+}
+.content .incentives {
+  text-align:right;
+  list-style-type:none;
+}
+.content p {
+  font-size: 16px;
+}
+.details .content .incentives {
+  text-align:right;
+  list-style-type:none;
+  min-width:200px;
+  width:70%;
+  margin:0 auto;
+}
+.details .content .incentives .desc {
+  direction: rtl;
+  white-space: nowrap;
+}
+.details .content .incentives h3 {
+  text-align:center;
+  border-bottom:1px solid white;
+}
+.details .content .incentives .total {
+  font-weight:bold;
+  border-top:1px solid white;
+}
+.dashboard .content .item {
+  display: flex;
+  padding: 1em 0;
+  border-top: 1px solid #666;
+  border-bottom: 4px solid #000;
+  border-radius: 1em;
+  transition: all 500ms;
+}
+.dashboard .content .item:hover {
+  background-color: rgba(255,255,255,.04);
+  border-bottom: 4px solid #666;
+  border-bottom: 4px solid rgba(255,255,255,.1);
+  transition: all 200ms;
+}
+.dashboard .content {
+  margin: 10px;
+}
+.dashboard .content .item:nth-child(1) {
+  border-top: 0;
+}
+.dashboard .content .item:last-child {
+  border-bottom: 0;
+}
+.dashboard .content .item .info {
+  flex: 0 0 100px;
+}
+.dashboard .content .item .info h2 {
+  font-size: 1em;
+}
+.dashboard .content .item .desc {
+  text-align: left;
+  flex: 1 1 auto;
 }

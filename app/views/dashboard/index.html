@@ -1,0 +1,15 @@
+<div ng-cloak class="dashboard">
+	<header>Jiff App</header>
+	<div class="content">
+		<div class="item" ng-repeat="blueprint in blueprints | orderBy : 'display_order'"  ng-click="details(blueprint)">
+			<div class="info {{blueprint.display_type}}">
+				<img ng-src="{{blueprint.icon_url}}" class="icon" />
+				<h2 title="{{blueprint.title}} {{blueprint.display_order}}">{{blueprint.title}}</h2>
+			</div>
+			<div class="desc">
+				{{blueprint.description}}
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+</div>

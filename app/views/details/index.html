@@ -1,0 +1,29 @@
+<div ng-cloak class="details">
+  <header ng-click="dashboard()">
+    <div class="chevron" chevron="left"></div>
+    Ovia Pregnancy Tracker
+  </header>
+  <div class="content">
+    <img ng-src="{{blueprint.icon_url}}" class="icon">
+    <h2>{{blueprint.title}}</h2>
+    <div class="incentives" ng-if="blueprint.goals.length === 1">
+      <h3>Earn up to {{blueprint.incentive_value}}!</h3>
+      <div class="desc" title="{{goal.title}}" ng-repeat="goal in blueprint.goals">{{goal.description}}: {{goal.incentive_value}}</div>
+    </div>
+    <div class="incentives" ng-if="blueprint.goals.length > 1">
+      <h3>Earn up to {{blueprint.incentive_value}}!</h3>
+      <div class="desc" title="{{goal.title}}" ng-repeat="goal in blueprint.goals">{{goal.description}}: {{goal.incentive_value}}</div>
+      <div class="total">Total: {{blueprint.incentive_value}}</div>
+    </div>
+    <span ng-if="!blueprint.incentive_value && blueprint.possible_earnings_description">{{blueprint.possible_earnings_description}}</span>
+    <p>{{blueprint.description}}</p>
+    <p>{{blueprint.incentive_description || 'there are no rewards / earnings'}}</p>
+
+
+  </div>
+  <footer></footer>
+</div>
+<!--p>
+  Showing of 'interpolate' filter:
+  {{ 'Current version is v%VERSION%.' | interpolate }}
+</p-->
