@@ -19,6 +19,7 @@ header {
   text-align: center;
   font-weight: lighter;
   background-color: rgba(255,255,255,.1);
+  background: url('views/details/details.jpg')
 }
 .chevron {
   color:white;
@@ -33,13 +34,10 @@ header {
 
 .content {
   text-align: center;
-  margin: 36px;
-}
-.content p {
-  text-align:left;
 }
 .content img.icon {
   width: 70px;
+  min-height:70px;
 }
 .content h3 {
   margin:0;
@@ -48,27 +46,19 @@ header {
   font-weight: lighter;
   margin:1em 0 0 0;
 }
-.content h2 h2 {
-  font-size: 1em;
-  margin: -0.3em 0 0 0;
-  font-weight: normal;
+.details .content {
+  margin: 36px;
 }
-.content .incentives {
-  text-align:right;
-  list-style-type:none;
-}
-.content p {
+.details .content p {
   font-size: 16px;
+  text-align:justify;
 }
 .details .content .incentives {
-  text-align:right;
-  list-style-type:none;
-  min-width:200px;
-  width:70%;
-  margin:0 auto;
+  border:1px solid #444;
+  background-color:#222;
+  padding:0 1em 1em;
 }
 .details .content .incentives .desc {
-  direction: rtl;
   white-space: nowrap;
 }
 .details .content .incentives h3 {
@@ -109,6 +99,7 @@ header {
   font-size: 1em;
 }
 .dashboard .content .item .desc {
-  text-align: left;
+  text-align: justify;
+  margin-right: 1em;
   flex: 1 1 auto;
 }
