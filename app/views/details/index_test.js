@@ -8,7 +8,7 @@ describe('myApp.views.details module', function() {
     var $window;
     var controller;
 
-    beforeEach(function() {
+    beforeEach(function(done) {
 
         module('myApp');
         inject(['$controller', '$location', '$window', function(ctrl, loc, win){
@@ -20,9 +20,9 @@ describe('myApp.views.details module', function() {
         $scope = {};
         controller = $controller('ViewDetailsCtrl', { $scope: $scope, $location: $location });
         controller.then(function () {
-            console.log('foo', arguments);
             done();
-        })
+        });
+        //done();
     });
     describe('routes', function() {
         it('redirects to details page should be handled', function() {
@@ -40,7 +40,7 @@ describe('myApp.views.details module', function() {
             $scope.dashboard();
             expect($location.path()).toBe('/dashboard');
         });
-    })
+    });
 
     describe('Specs', function () {
         it('should be optimized for 360px x 640px, portrait mode.', function () {

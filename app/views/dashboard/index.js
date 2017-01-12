@@ -18,6 +18,6 @@ angular.module('myApp.views.dashboard', ['ngRoute'])
 
         function details(blueprint) {
             $location.url('/details/' + blueprint.guid);
-        };
+        }
 
     }]);

@@ -10,7 +10,6 @@ describe('myApp.views.dashboard module', function() {
       controller,
       deferredBlueprints,
       deferredGoals,
-      deferredDreams,
       goals;
 
   beforeEach(function() {
@@ -56,18 +55,19 @@ describe('myApp.views.dashboard module', function() {
     });
     it('should use program_blueprints.json', function () {
 
+      expect(typeof controller).toEqual('function');
       // why is this simple deferred promise not resolving?
       var deferred = $q.defer();
-      console.log('deferred', deferred)
+      //console.log('deferred', deferred)
       deferred.promise.then(function () {
-        console.log('SIMPLE PROMISE PASSED', arguments);
+        //console.log('SIMPLE PROMISE PASSED', arguments);
         // done()
       });
       deferred.resolve({foo: 'bar'});
 
       // when that one works this one will to
-      var foo = blueprints.fetch().then(function () {
-        console.log('SPY PROMISE PASSED', arguments);
+      blueprints.fetch().then(function () {
+        //console.log('SPY PROMISE PASSED', arguments);
         //done();
       });
       deferredBlueprints.resolve({});

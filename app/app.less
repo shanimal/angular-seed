@@ -1,0 +1,42 @@
+body, html {
+  //font-family: helvetica;
+  color: white;
+  background: #333333;
+  height:100%;
+}
+
+header {
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: lighter;
+  background-color: rgba(255,255,255,.1);
+  background: url('views/details/details.jpg');
+  &:before {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid white;
+  }
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.content {
+  text-align: center;
+  img.icon {
+    width: 70px;
+    min-height:70px;
+  }
+  h3 {
+    margin:0;
+  }
+  h2 {
+    font-weight: lighter;
+    margin:1em 0 0 0;
+  }
+}

@@ -6,3 +6,6 @@ npm-debug.log
 tmp
 .DS_Store
 .idea
+app/app.min.css
+app/app.min.js
+app/app.min.js.map

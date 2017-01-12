@@ -35,7 +35,7 @@ angular.module('myApp.views.details', ['ngRoute'])
                     e += !isNaN(v.incentive_value) && v.incentive_value || 0;
                     return e;
                 },0);
-                console.log('$scope.blueprint', $scope.blueprint);
+                //console.log('$scope.blueprint', $scope.blueprint);
             });
 
         function dashboard () {
