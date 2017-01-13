@@ -36,11 +36,11 @@ module.exports = function(config) {
     autoWatch: true,
 
     frameworks: ['jasmine'],
-    browsers: ['PhantomJS_MobileFirst'],
+    browsers: ['Chrome'],
 
     plugins: [
-      'karma-phantomjs-launcher',
-      //'karma-chrome-launcher',
+      //'karma-phantomjs-launcher',
+      'karma-chrome-launcher',
       //'karma-firefox-launcher',
       'karma-jasmine',
       'karma-junit-reporter'
