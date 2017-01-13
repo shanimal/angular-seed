@@ -55,7 +55,7 @@ describe('myApp.views.dashboard module', function() {
     });
     it('should use program_blueprints.json', function () {
 
-      expect(typeof controller).toEqual('function');
+      expect(typeof controller).toEqual('object');
       // why is this simple deferred promise not resolving?
       var deferred = $q.defer();
       //console.log('deferred', deferred)
