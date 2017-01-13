@@ -10,6 +10,7 @@
     "config-grunt-tasks": "^1.0.3",
     "eslint": "^3.13.1",
     "grunt": "^0.4.5",
+    "grunt-cli": "^1.2.0",
     "grunt-contrib-eslint": "0.0.5",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-less": "^1.4.0",
