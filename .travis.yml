@@ -15,6 +15,7 @@ install:
   - grunt uglify less
 
 before_script:
+  - npm install grunt-cli -g
   - npm install
 
 script:
